@@ -1,4 +1,3 @@
-# CHANSHEN
-## 個人網站
+# CHANSHEN WEBSITE
 # HTML
 # CSS
