@@ -5,26 +5,70 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.logo{
+    color: #fcddaf;
+    font-size: 7rem;
+    letter-spacing: 0.2rem;
+    animation: text 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes text{
+    0%,30%{
+        text-shadow: 
+        5px 5px 0px #eb45ab,
+        10px 10px 0px #efa032,
+        15px 15px 0px #46b59b,
+        20px 20px 0px #017e7f,
+        25px 25px 0px #0d5370,
+        35px 35px 20px #1e1e25,
+        50px 50px 40px #131318;
+        transform: skewX(-25deg)skewY(2deg);
+    }
+    90%,100%{
+        text-shadow: none;
+        transform: none;
+    }
+}
+
 .header{
-    background-image: linear-gradient(90deg, #555, #333);
-    width: 100%;
-    margin: auto;
+    background-color: #555;
 }
 .header nav{
-    width: 100%;
     text-align: center;
 }
-.header nav a{
+
+.menu{
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    gap: 48px;
+    text-align: right;
+    
+}
+.menu a{
     text-decoration: none;
-    color: aliceblue;
-    padding: 20px;
-    display: inline-block;
-
+    color: #fff;
+    
 }
-.header nav a:hover{
-    background-color: #ccc;
+.menu-item {
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+    list-style: none;
+    text-transform: uppercase;
 }
 
+.menu-item::after {
+    content: attr(data-content);
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+}
+ 
+.menu-item:hover {
+    translate: 0px -100%;
+}
+/* background 區塊 */
 .background{
     width: 100%;
     height: 100vh;
@@ -59,11 +103,13 @@
     margin: 0 auto;
 }
 .aboutme h1{
+    
     text-align: center;
     padding: 20px 0px;
     color: #fff;
     font-size: 30px;
     background-color: #555;
+
 }
 .aboutpic{
     box-sizing: border-box; 
@@ -92,6 +138,19 @@
     font-weight: 500;
     color: #555;
     padding: 20px 0;
+
+    display: inline;
+    animation: show 3s ease-out forwards;
+    /* color: transparent; */
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+
+}
+@keyframes show {
+    to {
+      background-size: 100% 100%;
+    }
 }
 
 .skill{
@@ -165,7 +224,7 @@
 @media screen and (min-width:768px){
 
     .header nav{
-        text-align: right;
+        text-align: center;
     }
     .aboutme .aboutcontainer{
         display: flex;
