@@ -6,33 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <title>CHANSHEN LEE </title>
+    
 
 </head>
 
 <body>
     
-    <header id="home" class="header">
+    <header id="home" class="header" >
         <!-- nav : 導覽超連結區塊 -->
         <nav>
             <ul class="menu">
-                <li class="menu-item" data-content="home">
-                    <a href="#home">home</a>
+                <li class="menu-item" data-content="Home">
+                    <a href="#home">Home</a>
                 </li>
-                <li class="menu-item" data-content="aboutme">
-                    <a href="#aboutme">aboutme</a>
+                <li class="menu-item" data-content="About Me">
+                    <a href="#aboutme">About Me</a>
                 </li>
-                <li class="menu-item" data-content="skill">
-                    <a href="#skill">skill</a>
+                <li class="menu-item" data-content="Skill">
+                    <a href="#skill">Skill</a>
                 </li>
-                <li class="menu-item" data-content="experience">
-                    <a href="#experience">experience</a>
+                <li class="menu-item" data-content="Experience">
+                    <a href="#experience">Experience</a>
                 </li>
-                <li class="menu-item" data-content="contact">
-                    <a href="#contact">contact</a>
+                <li class="menu-item" data-content="Contact">
+                    <a href="#contact">Contact</a>
                 </li>
             </ul> 
         </nav>
+        <canvas id="canvas"></canvas>
     </header>
 
     
@@ -51,7 +54,7 @@
 
   <!-- About me -->
   <section class="aboutme">
-    <h1 id="aboutme">ABOUT ME</h1>
+    <h1 id="aboutme">About Me</h1>
     <div class="aboutcontainer">
         <div class="aboutpic">
             <img src="./images/my.jpg">
@@ -65,9 +68,12 @@
 
 
   <!-- SKILL -->
+
   <div class="skill">
-    <h1 id="skill">SKILL</h1>
+    <h1 id="skill">Skill</h1>
+
     <div class="skillcontainer">
+
         <div class="skilldata">
             <div class="skillimg">
                 <img src="./images/html-5.png" alt="html" title="html">
@@ -88,6 +94,7 @@
             <p>利用Media、flex實現RWD。</p>
         </div>
     </div>
+
     <div class="skilldata">
         <div class="skillimg">
             <img src="./images/js.png" alt="Javascript" title="Javascript">
@@ -98,6 +105,7 @@
             <p>DOM操作。</p>
         </div>
     </div>
+
     <div class="skilldata">
         <div class="skillimg">
             <img src="./images/mysql.png" alt="sql" title="sql">
@@ -109,67 +117,78 @@
             <p>關聯式資料庫查詢。</p>
         </div>
     </div>
-        <div class="skilldata">
-            <div class="skillimg">
-                <img src="./images/python.png" alt="python" title="python">
-            </div>
-            <div class="skilltxt">
-                <h2>Python</h2>
-                <p>熟悉基本Python語法。</p>
-                <p>使用Selenium爬取相關資料並儲存。</p>
-                <p>利用Pandas切割資料庫資料。</p>
-            </div>
+
+    <div class="skilldata">
+        <div class="skillimg">
+            <img src="./images/python.png" alt="python" title="python">
         </div>
+        <div class="skilltxt">
+            <h2>Python</h2>
+            <p>熟悉基本Python語法。</p>
+            <p>使用Selenium爬取相關資料並儲存。</p>
+            <p>利用Pandas切割資料庫資料。</p>
+        </div>
+    </div>
+
     </div>
 </div>
 
 
 
 <!-- Experience -->
-<div id="experience" class="exwrap">
-    <div class="exitem">
-        <img src="./images/stock-market-thief.png">
-        <div class="extxt">
-            <h2>畢業專題-股市偷金</h2>
-            <p>使用Python Falsk串接LINE BOT，以爬蟲抓取股市的各項數據、圖表、該股新聞資訊，提供給使用者即時查詢，再以各種常見公式還有巴菲特的選股邏輯，打造出其股市健檢功能。</p>
+<div class="experience">
+<h1 id="experience">Experience</h1>
+    <div id="experience" class="exwrap">
+        <div class="exitem">
+            <img src="./images/stock.png">
+            <div class="extxt">
+                <h2>畢業專題-股市偷金</h2>
+                <p>使用 Python Falsk 串接 LINE BOT，以爬蟲抓取股市的各項數據、圖表、該股新聞資訊，提供給使用者即時查詢，再以各種常見公式還有巴菲特的選股邏輯，打造出其股市健檢功能。</p>
+            </div>
         </div>
-    </div>
-    <div class="exitem">
-        <img src="./images/up.jpeg">
-        <div class="extxt">
-            <h2>目前狀況</h2>
-            <p>精進自己HTML、CSS、Javascript的基本觀念，學習目前在業界上主流熱門的前端框架，後端與資料庫把學習到的新技術嘗試製作自己有興趣的side project。</p>
-        </div> 
+        <div class="exitem">
+            <img src="./images/haa.jpeg">
+            <div class="extxt">
+                <h2>HAA競拍專案</h2>
+                <p>在企業裡面實作專案，解決企業需求，也對於前端技能的掌握更加的熟悉，串接 API 並將資料打到資料庫裡面，也可以透過 API 從前端取資料出來。</p>
+            </div> 
+        </div>
+        <div class="exitem">
+            <img src="./images/up.jpeg">
+            <div class="extxt">
+                <h2>不斷學習</h2>
+                <p>精進自己 HTML、CSS、Javascript 的基本觀念，學習目前在業界上主流熱門的前端框架，後端與資料庫把學習到的新技術嘗試製作自己有興趣的 Side Project。</p>
+            </div> 
+        </div>
     </div>
 </div>
 
 
-
-
 <!-- footer -->
-<div class="main-footer">
-    <!-- <div class="footer-container">
-        <div class="footer-item">
-            <nav>
-                <a href="mailto:sun5201593@gmail.com" target="_blank">
-                    <img src="./images/gmail.png" alt="gmail">
-                </a>
-                <a href="https://github.com/Chanshenlee" target="_blank">
-                    <img src="./images/github.png" alt="github">
-                </a>
-                <a href="#home">
-                    <img src="./images/homepage.png" alt="home">
-                </a>
-            </nav>
-        </div>
-    </div> -->
+<div class="footer">
+
+    <div class="footer-img">
+        <a href="#home" class="icon">
+            <i class="bi bi-house"></i>
+        </a>
+        <a href="https://github.com/Chanshenlee" target="_blank" class="icon">
+            <i class="bi bi-github"></i>
+        </a>
+        <a href="mailto:sun5201593@gmail.com" target="_blank" class="icon">
+            <i class="bi bi-envelope"></i>
+        </a>
+    </div>
+
     <div class="copyright">
         Copyright &copy;
         LEE CHANG SHENG
     </div>
+
+    <div class="footer-img"></div>
+        
 </div>
 
   
-    
+    <script type="text/javascript" src="./js/firework.js"></script>
 </body>
 </html>
